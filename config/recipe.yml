@@ -1,7 +1,7 @@
 # image will be published to ghcr.io/<user>/<name>
-name: template
+name: kodingers-image
 # description will be included in the image's metadata
-description: kodingers.
+description: os untuk menkoding dengan nyaman.
 
 # the base image to build on top of (FROM) and the version tag to use
 base-image: ghcr.io/ublue-os/kinoite-main
