@@ -1,7 +1,7 @@
 # image will be published to ghcr.io/<user>/<name>
 name: kodingers-image
 # description will be included in the image's metadata
-description: os untuk menkoding dengan nyaman.
+description: os untuk menkoding dan gaming dengan nyaman.
 
 # the base image to build on top of (FROM) and the version tag to use
 base-image: ghcr.io/ublue-os/kinoite-main
@@ -10,44 +10,51 @@ image-version: latest # latest is also supported if you want new updates ASAP
 # module configuration, executed in order
 # you can include multiple instances of the same module
 modules:
-  - type: files
-    files:
-      - usr: /usr # copies config/files/usr into your image's /usr.
-                  # put configuration files you want in /etc/ on a booted system 
-                  # in /usr/etc/ in the image. read more in files module reference.
-  - type: script
-    scripts:
-    - workaround.sh
+  # - type: files
+  #   files:
+  #     - usr: /usr # copies config/files/usr into your image's /usr.
+  #                 # put configuration files you want in /etc/ on a booted system 
+  #                 # in /usr/etc/ in the image. read more in files module reference.
+  - type: akmods
+    install:
+        - openrazer              
   - type: rpm-ostree
     repos:
         - https://download.docker.com/linux/fedora/docker-ce.repo
         - https://raw.githubusercontent.com/ublue-os/bluefin/main/dx/etc/yum.repos.d/vscode.repo
+        - https://download.opensuse.org/repositories/hardware:/razer/Fedora_39/hardware:razer.repo
     install:
       - docker-ce
       - docker-ce-cli
       - docker-buildx-plugin
       - docker-compose-plugin
       - code
+      - neofetch
+      - zsh
+      - openrazer-daemon
     remove:
       - firefox # default firefox removed in favor of flatpak
       - firefox-langpacks # langpacks needs to also be removed to prevent dependency problems
-
-  - type: default-flatpaks
-    notify: true # Send notification after install/uninstall is finished (true/false)
-    system:
-      # If no repo information is specified, Flathub will be used by default
-      # repo-url: https://dl.flathub.org/repo/flathub.flatpakrepo
-      # repo-name: flathub
-      # repo-title: "Flathub (system-wide)" # Optional; this sets the remote's user-facing name in graphical frontends like GNOME Software
-      install:
-        # - org.mozilla.firefox
-        # - org.gnome.Loupe
-        # - one.ablaze.floorp//lightning # This is an example of flatpak which has multiple branches in selection (flatpak//branch).
-      # Flatpak runtimes are not supported (like org.winehq.Wine//stable-23.08),
-      # only normal flatpak applications are (like Floorp Lightning web browser in this example).
-      # Installing different branches of the same Flatpak is not supported.
-      remove:
-      # - org.gnome.eog
+  - type: script
+    scripts:
+    - container-setup.sh
+    - after-build.sh
+  # - type: default-flatpaks
+  #   notify: true # Send notification after install/uninstall is finished (true/false)
+  #   system:
+  #     # If no repo information is specified, Flathub will be used by default
+  #     # repo-url: https://dl.flathub.org/repo/flathub.flatpakrepo
+  #     # repo-name: flathub
+  #     # repo-title: "Flathub (system-wide)" # Optional; this sets the remote's user-facing name in graphical frontends like GNOME Software
+  #     install:
+  #       # - org.mozilla.firefox
+  #       # - org.gnome.Loupe
+  #       # - one.ablaze.floorp//lightning # This is an example of flatpak which has multiple branches in selection (flatpak//branch).
+  #     # Flatpak runtimes are not supported (like org.winehq.Wine//stable-23.08),
+  #     # only normal flatpak applications are (like Floorp Lightning web browser in this example).
+  #     # Installing different branches of the same Flatpak is not supported.
+  #     remove:
+  #     # - org.gnome.eog
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
 
