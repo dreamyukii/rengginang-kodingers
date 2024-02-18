@@ -20,9 +20,7 @@ modules:
   #                 # in /usr/etc/ in the image. read more in files module reference.
   - type: containerfile
     snippets:
-        - COPY --from=ghcr.io/ublue-os/akmods:main-39 /rpms/ /tmp/rpms
-        - RUN find /tmp/rpms
-        - RUN rpm-ostree install /tmp/akmods-rpms/kmods/*openrazer*.rpm            
+        - RUN rpm-ostree install *openrazer*.rpm            
   - type: rpm-ostree
     repos:
         - https://download.docker.com/linux/fedora/docker-ce.repo
