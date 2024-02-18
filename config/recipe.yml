@@ -20,7 +20,7 @@ modules:
   #                 # in /usr/etc/ in the image. read more in files module reference.
   - type: containerfile
     snippets:
-        - COPY --from=ghcr.io/ublue-os/akmods:${AKMODS_FLAVOR}-${FEDORA_MAJOR_VERSION} /rpms /tmp/akmods-rpms
+        - COPY --from=ghcr.io/ublue-os/akmods:main-39 /rpms /tmp/akmods-rpms
         - RUN rpm-ostree install /tmp/akmods-rpms/kmods/*openrazer*.rpm 
   - type: rpm-ostree
     repos:
