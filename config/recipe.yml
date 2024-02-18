@@ -10,9 +10,9 @@ image-version: latest # latest is also supported if you want new updates ASAP
 # module configuration, executed in order
 # you can include multiple instances of the same module
 modules:
-  - type: script
-    scripts:
-    - unity-repo.sh
+  # - type: script
+  #   scripts:
+  #   - unity-repo.sh
   # - type: files
   #   files:
   #     - usr: /usr # copies config/files/usr into your image's /usr.
@@ -20,7 +20,8 @@ modules:
   #                 # in /usr/etc/ in the image. read more in files module reference.
   - type: containerfile
     snippets:
-        - RUN rpm-ostree install *openrazer*.rpm            
+        - COPY --from=ghcr.io/ublue-os/akmods:${AKMODS_FLAVOR}-${FEDORA_MAJOR_VERSION} /rpms /tmp/akmods-rpms
+        - RUN rpm-ostree install /tmp/akmods-rpms/kmods/*openrazer*.rpm 
   - type: rpm-ostree
     repos:
         - https://download.docker.com/linux/fedora/docker-ce.repo
