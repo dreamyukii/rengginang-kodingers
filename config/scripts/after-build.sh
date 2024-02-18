@@ -5,8 +5,5 @@
 # builds actually ran successfully without any errors!
 set -oueux pipefail
 
-# Your code goes here.
-# echo 'This is an example shell script'
-# echo 'Scripts here will run during build if specified in recipe.yml'
 # alternatives cannot create symlinks on its own during a container build
 ln -sf /usr/bin/ld.bfd /etc/alternatives/ld && ln -sf /etc/alternatives/ld /usr/bin/ld
