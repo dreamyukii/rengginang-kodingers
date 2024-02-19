@@ -1,7 +1,8 @@
 # image name
 name: kodingers-kde
+
 # image description
-description: os untuk menkoding dan gaming dengan nyaman.
+description: kodingers os with kde.
 
 # base image
 base-image: ghcr.io/ublue-os/kinoite-main
