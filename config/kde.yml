@@ -1,0 +1,18 @@
+# image name
+name: kodingers-kde
+# image description
+description: os untuk menkoding dan gaming dengan nyaman.
+
+# base image
+base-image: ghcr.io/ublue-os/kinoite-main
+image-version: latest # version
+
+# module configuration
+modules:
+    - from-file: remove-firefox.yml
+    - from-file: openrazer-kmod.yml
+    - from-file: app.yml
+    - from-file: after-build-image.yml
+
+
+

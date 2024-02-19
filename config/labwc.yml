@@ -1,0 +1,15 @@
+# image name
+name: kodingers-labwc
+# image description
+description: labwc experiment
+
+# base image
+base-image: ghcr.io/ublue-os/base-main
+image-version: latest # version
+
+# module configuration
+modules:
+    - from-file: install-labwc.yml
+    - from-file: openrazer-kmod.yml
+    - from-file: app.yml
+    - from-file: after-build-image.yml

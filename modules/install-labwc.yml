@@ -1,0 +1,8 @@
+modules:
+- type: rpm-ostree   # add repo and install package
+install:
+    - labwc
+    - labwc-menu-generator
+    - wofi
+    - waybar
+    - flatpak
