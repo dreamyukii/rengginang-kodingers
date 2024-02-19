@@ -12,10 +12,7 @@ image-version: latest # version
 modules:
     - from-file: openrazer-kmod.yml
     - from-file: configure-app.yml
+    - from-file: after-build.yml
 
-type: script # setup container and cleanup
-scripts:
-        - container-setup.sh
-        - after-build.sh
 -type: signing # this sets up the proper policy & signing files for signed images to work fully
 
