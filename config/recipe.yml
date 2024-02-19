@@ -1,28 +1,19 @@
-# image will be published to ghcr.io/<user>/<name>
+# image name
 name: kodingers-image
-# description will be included in the image's metadata
+# image description
 description: os untuk menkoding dan gaming dengan nyaman.
 
-# the base image to build on top of (FROM) and the version tag to use
+# base image
 base-image: ghcr.io/ublue-os/kinoite-main
-image-version: latest # latest is also supported if you want new updates ASAP
+image-version: latest # version
 
-# module configuration, executed in order
-# you can include multiple instances of the same module
+# module configuration
 modules:
-  # - type: script
-  #   scripts:
-  #   - unity-repo.sh
-  # - type: files
-  #   files:
-  #     - usr: /usr # copies config/files/usr into your image's /usr.
-  #                 # put configuration files you want in /etc/ on a booted system 
-  #                 # in /usr/etc/ in the image. read more in files module reference.
-  - type: containerfile
+  - type: containerfile  # openrazer kmod
     snippets:
         - COPY --from=ghcr.io/ublue-os/akmods:main-39 /rpms /tmp/akmods-rpms
         - RUN rpm-ostree install /tmp/akmods-rpms/kmods/*openrazer*.rpm 
-  - type: rpm-ostree
+  - type: rpm-ostree   # add repo ,remove, install package
     repos:
         - https://download.docker.com/linux/fedora/docker-ce.repo
         - https://raw.githubusercontent.com/ublue-os/bluefin/main/dx/etc/yum.repos.d/vscode.repo
@@ -39,13 +30,14 @@ modules:
       - yt-dlp
       - jetbrains-mono-fonts-all
       - polychromatic
+      - python3-openrazer
+      - fira-code-fonts 
     remove:
       - firefox # default firefox removed in favor of flatpak
       - firefox-langpacks # langpacks needs to also be removed to prevent dependency problems
-  - type: script
+  - type: script # setup container and cleanup
     scripts:
     - container-setup.sh
     - after-build.sh
-
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
 

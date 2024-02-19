@@ -10,8 +10,9 @@ the best operating system for development and playing games
 Features
 ---
 1. KDE Plasma Desktop Environment
-2. Docker and Visual Studio Code Pre-installed
-3. Vanilla Experiences
+2. Docker and Visual Studio Code pre-installed
+3. almost vanilla experience
+4. openrazer pre-installed with polychromatic
 
 
 ### Rebase 
