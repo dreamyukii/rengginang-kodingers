@@ -1,3 +1,4 @@
+modules:
   - type: script # setup container and cleanup
     scripts:
     - container-setup.sh
