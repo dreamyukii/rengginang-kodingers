@@ -6,5 +6,5 @@
 set -oueux pipefail
 
 # image name and ld symlink
-sed -i '/^PRETTY_NAME/s/Silverblue/Bluefin/' /usr/lib/os-release && \
+sed -i '/^PRETTY_NAME/s/Kinoite/Kodingers/' /usr/lib/os-release && \
 ln -sf /usr/bin/ld.bfd /etc/alternatives/ld && ln -sf /etc/alternatives/ld /usr/bin/ld
