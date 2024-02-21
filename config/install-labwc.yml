@@ -6,7 +6,6 @@ modules:
         - flatpak
         - waybar
         - wofi
-        - wl-randr
         - grim
         - slurp
         - lightdm
