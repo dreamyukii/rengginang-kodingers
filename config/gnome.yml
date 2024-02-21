@@ -1,11 +1,11 @@
 # image name
-name: kodingers-kde
+name: kodingers-gnome
 
 # image description
-description: kodingers os with kde.
+description: kodingers os with gnome.
 
 # base image
-base-image: ghcr.io/ublue-os/kinoite-main
+base-image: ghcr.io/ublue-os/silverblue-main
 image-version: latest # version
 
 # module configuration

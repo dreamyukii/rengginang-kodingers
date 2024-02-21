@@ -9,7 +9,7 @@ image-version: latest # version
 
 # module configuration
 modules:
-    - from-file: install-labwc.yml
     - from-file: openrazer-kmod.yml
-    - from-file: app.yml
-    - from-file: after-build-image.yml
+    - from-file: install-labwc.yml
+    - from-file: configure-app.yml
+    - from-file: after-build.yml

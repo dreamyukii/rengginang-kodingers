@@ -1,6 +1,10 @@
 modules:
+  - type: systemd
+    system:
+      enabled: 
+      - docker.socket
+      - podman.socket  
   - type: script # setup container and cleanup
     scripts:
-            - container-setup.sh
-            - after-build.sh
+        - after-build.sh
 

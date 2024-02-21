@@ -23,6 +23,7 @@ jobs:
         recipe:
           # !! Add your recipes here 
           - kde.yml
+          - gnome.yml
     steps:
        # the build is fully handled by the reusable github action
       - name: build kodingers image

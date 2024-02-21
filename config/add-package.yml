@@ -1,5 +1,5 @@
 modules:
-  - type: rpm-ostree  
+  - type: rpm-ostree   
     snippets:
         - COPY --from=ghcr.io/ublue-os/akmods:main-39 /rpms /tmp/akmods-rpms
         - RUN rpm-ostree install /tmp/akmods-rpms/kmods/*openrazer*.rpm
@@ -21,6 +21,9 @@ modules:
         - polychromatic
         - python3-openrazer
         - fira-code-fonts
-    remove:
-        - firefox # default firefox removed in favor of flatpak
-        - firefox-langpacks # langpacks needs to also be removed to prevent dependency problems
+  - type: fonts
+    fonts:
+      nerd-fonts:
+        - Agave Nerd Font
+      google-fonts:
+        - Plus Jakarta Sans
