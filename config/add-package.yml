@@ -24,6 +24,7 @@ modules:
   - type: fonts
     fonts:
       nerd-fonts:
-        - Agave Nerd Font
+        - Agave
+        - UbuntuMono
       google-fonts:
         - Plus Jakarta Sans
