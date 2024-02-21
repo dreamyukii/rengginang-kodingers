@@ -11,3 +11,9 @@ modules:
         - slurp
         - lightdm
         - slick-greeter
+        - pcmanfm
+        - foot
+  - type: containerfile   
+    snippets:
+        - RUN systemctl enable lightdm
+    
