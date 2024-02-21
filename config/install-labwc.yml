@@ -2,7 +2,12 @@ modules:
   - type: rpm-ostree  
     install:
         - labwc
-        - labwc-workspace
+        - labwc-menu-generator
         - flatpak
         - waybar
         - wofi
+        - wl-randr
+        - grim
+        - slurp
+        - lightdm
+        - slick-greeter

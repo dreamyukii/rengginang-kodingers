@@ -3,6 +3,7 @@
 
 ## rengginang-kodingers
 
+[![build-kodingers](https://github.com/sekalengrengginang/rengginang-kodingers/actions/workflows/build.yml/badge.svg)](https://github.com/sekalengrengginang/rengginang-kodingers/actions/workflows/build.yml)
 
 the best operating system for development and playing games
 

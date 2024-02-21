@@ -1,8 +1,5 @@
 modules:
   - type: rpm-ostree   
-    snippets:
-        - COPY --from=ghcr.io/ublue-os/akmods:main-39 /rpms /tmp/akmods-rpms
-        - RUN rpm-ostree install /tmp/akmods-rpms/kmods/*openrazer*.rpm
     repos:
         - https://download.docker.com/linux/fedora/docker-ce.repo
         - https://raw.githubusercontent.com/ublue-os/bluefin/main/dx/etc/yum.repos.d/vscode.repo
@@ -21,6 +18,7 @@ modules:
         - polychromatic
         - python3-openrazer
         - fira-code-fonts
+        - hugo
   - type: fonts
     fonts:
       nerd-fonts:
