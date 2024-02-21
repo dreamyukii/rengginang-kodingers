@@ -4,7 +4,7 @@ modules:
       enabled: 
       - docker.socket
       - podman.socket  
-  - type: script # setup container and cleanup
+  - type: script 
     scripts:
         - after-build.sh
 

@@ -10,4 +10,9 @@ image-version: latest # version
 # module configuration
 modules:
     - from-file: install-labwc.yml
-    - from-file: after-build.yml
+
+
+-type: signing # this sets up the proper policy & signing files for signed images to work fully
+
+
+
