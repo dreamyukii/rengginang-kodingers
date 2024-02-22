@@ -5,20 +5,23 @@
 
 [![build-kodingers](https://github.com/sekalengrengginang/rengginang-kodingers/actions/workflows/build.yml/badge.svg)](https://github.com/sekalengrengginang/rengginang-kodingers/actions/workflows/build.yml)
 
-the best operating system for development and playing games
-
-
-Features
----
-1. KDE Plasma Desktop Environment
-2. Docker and Visual Studio Code pre-installed
-3. almost vanilla experience
-4. openrazer pre-installed with polychromatic
-
-
 ### Rebase 
 
+KDE
+
 ```bash
-rpm-ostree rebase ostree-image-signed:docker://ghcr.io/sekalengrengginang/kodingers-image:latest
+rpm-ostree rebase ostree-image-signed:docker://ghcr.io/sekalengrengginang/kodingers-kde:latest
+```
+---
+GNOME
+
+```bash
+rpm-ostree rebase ostree-image-signed:docker://ghcr.io/sekalengrengginang/kodingers-gnome:latest
+```
+---
+Labwc
+
+```bash
+rpm-ostree rebase ostree-image-signed:docker://ghcr.io/sekalengrengginang/kodingers-labwc:latest
 ```
 ---

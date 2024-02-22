@@ -8,11 +8,12 @@ modules:
         - wofi
         - grim
         - slurp
-        - lightdm
-        - slick-greeter
+        - greetd
+        - greetd-selinux
         - pcmanfm
         - foot
+        - xorg-x11-server-Xwayland 
   - type: containerfile   
     snippets:
-        - RUN systemctl enable lightdm
+        - RUN systemctl enable greetd
     
