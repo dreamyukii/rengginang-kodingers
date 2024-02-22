@@ -1,4 +1,7 @@
 modules:
+  - type: files
+    files:
+        - etc: /etc
   - type: rpm-ostree  
     install:
         - labwc
@@ -8,12 +11,13 @@ modules:
         - wofi
         - grim
         - slurp
-        - greetd
-        - greetd-selinux
+        - lightdm
+        - slick-greeter
         - pcmanfm
         - foot
         - xorg-x11-server-Xwayland 
   - type: containerfile   
     snippets:
-        - RUN systemctl enable greetd
+        - RUN systemctl enable lightdm && \
+          systemctl enable ublue-lightdm-workaround && \
     
