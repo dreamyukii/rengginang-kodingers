@@ -16,8 +16,10 @@ modules:
         - pcmanfm
         - foot
         - xorg-x11-server-Xwayland 
-  - type: containerfile   
-    snippets:
-        - RUN systemctl enable lightdm && \
-          systemctl enable ublue-lightdm-workaround && \
-    
+
+  - type: systemd
+    system:
+        enabled:
+          - lightdm.service 
+          - ublue-lightdm-workaround.service
+
