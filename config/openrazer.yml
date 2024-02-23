@@ -7,4 +7,6 @@ modules:
     repos:
           - https://download.opensuse.org/repositories/hardware:/razer/Fedora_39/hardware:razer.repo
     install:
-          - openrazer-daemon
+            - openrazer-daemon
+            - polychromatic
+            - python3-openrazer

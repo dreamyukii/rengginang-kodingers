@@ -14,8 +14,6 @@ modules:
         - zsh
         - yt-dlp
         - jetbrains-mono-fonts-all
-        - polychromatic
-        - python3-openrazer
         - fira-code-fonts
         - hugo
         - unityhub
