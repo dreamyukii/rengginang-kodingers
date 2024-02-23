@@ -22,8 +22,8 @@ jobs:
       matrix:
         recipe:
           # !! Add your recipes here 
-          - kde.yml
-          - gnome.yml
+          # - kde.yml
+          # - gnome.yml
           - labwc.yml
     steps:
        # the build is fully handled by the reusable github action

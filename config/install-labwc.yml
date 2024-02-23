@@ -1,5 +1,17 @@
 modules:
   - type: rpm-ostree  
+    install:
+        - labwc
+        - labwc-menu-generator
+        - flatpak
+        - waybar
+        - wofi
+        - grim
+        - slurp
+        - kitty
+        - slick-greeter
+        - foot
+        - xorg-x11-server-Xwayland 
     remove: 
         - NetworkManager-openconnect-gnome
         - NetworkManager-openvpn-gnome
@@ -52,21 +64,11 @@ modules:
         - xfce4-whiskermenu-plugin
         - xfce4-xkb-plugin
         - xfconf
+        - xfce4-notifyd
         - xfdashboard
         - xfdashboard-themes
         - xfdesktop
+        - xfconf
         - xfwm4
         - xfwm4-themes
-    install:
-        - labwc
-        - labwc-menu-generator
-        - flatpak
-        - waybar
-        - wofi
-        - grim
-        - slurp
-        - kitty
-        - slick-greeter
-        - foot
-        - xorg-x11-server-Xwayland 
 
