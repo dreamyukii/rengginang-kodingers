@@ -11,7 +11,7 @@ image-version: latest # version
 # module configuration
 modules:
     - from-file: remove-package.yml
-    - from-file: container-snippets.yml
+    - from-file: openrazer.yml
     - from-file: add-package.yml
     - from-file: after-build.yml
 

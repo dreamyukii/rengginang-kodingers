@@ -1,5 +1,0 @@
-modules:
-  - type: containerfile   
-    snippets:
-        - COPY --from=ghcr.io/ublue-os/akmods:main-39 /rpms /tmp/akmods-rpms
-        - RUN rpm-ostree install /tmp/akmods-rpms/kmods/*openrazer*.rpm
