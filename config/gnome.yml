@@ -12,7 +12,6 @@ image-version: latest # version
 modules:
     - from-file: remove-package.yml
     - from-file: add-package.yml
-    - from-file: install-unity.yml
     - from-file: after-build.yml
 
 -type: signing # this sets up the proper policy & signing files for signed images to work fully
