@@ -17,7 +17,7 @@ modules:
         - fira-code-fonts
         - hugo
         - unityhub
-        - dotnet-sdk-6.0
+        - dotnet-sdk-7.0
     optfix:
         - unityhub # This is the directory being fixed, not the package name
   - type: fonts
