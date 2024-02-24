@@ -1,74 +1,13 @@
 modules:
+  - type: script
+    scripts:
+      - setup-google-chrome-repo.sh
   - type: rpm-ostree  
+    repos:
+        - https://gist.githubusercontent.com/sekalengrengginang/8673e3f71d913c1d384bf8a64af8df1c/raw/cf904a36c5bea766ef5145d9d8605009be419d88/unityhub.repo
     install:
-        - labwc
-        - labwc-menu-generator
-        - flatpak
-        - waybar
-        - wofi
-        - grim
-        - slurp
-        - kitty
-        - slick-greeter
-        - foot
-        - xorg-x11-server-Xwayland 
-    remove: 
-        - NetworkManager-openconnect-gnome
-        - NetworkManager-openvpn-gnome
-        - NetworkManager-pptp-gnome
-        - NetworkManager-ssh-gnome
-        - NetworkManager-vpnc-gnome
-        - atril
-        - desktop-backgrounds-compat
-        - firefox
-        - firefox-langpacks
-        - galculator
-        - gparted
-        - greybird-dark-theme
-        - greybird-light-theme
-        - greybird-xfce4-notifyd-theme
-        - greybird-xfwm4-theme
-        - gtk-xfce-engine
-        - initial-setup-gui
-        - plymouth-system-theme
-        - xfce4-about
-        - xfce4-appfinder
-        - xfce4-battery-plugin
-        - xfce4-clipman-plugin
-        - xfce4-cpugraph-plugin
-        - xfce4-datetime-plugin
-        - xfce4-dict-plugin
-        - xfce4-diskperf-plugin
-        - xfce4-eyes-plugin
-        - xfce4-fsguard-plugin
-        - xfce4-genmon-plugin
-        - xfce4-mailwatch-plugin
-        - xfce4-mount-plugin
-        - xfce4-netload-plugin
-        - xfce4-panel
-        - xfce4-panel-profiles
-        - xfce4-places-plugin
-        - xfce4-power-manager
-        - xfce4-pulseaudio-plugin
-        - xfce4-screensaver
-        - xfce4-screenshooter-plugin
-        - xfce4-sensors-plugin
-        - xfce4-session
-        - xfce4-settings
-        - xfce4-systemload-plugin
-        - xfce4-taskmanager
-        - xfce4-terminal
-        - xfce4-time-out-plugin
-        - xfce4-verve-plugin
-        - xfce4-weather-plugin
-        - xfce4-whiskermenu-plugin
-        - xfce4-xkb-plugin
-        - xfconf
-        - xfce4-notifyd
-        - xfdashboard
-        - xfdashboard-themes
-        - xfdesktop
-        - xfconf
-        - xfwm4
-        - xfwm4-themes
+        - unityhub
+    optfix:
+        - unityhub # This is the directory being fixed, not the package name
 
+ 
