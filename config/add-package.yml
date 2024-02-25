@@ -18,8 +18,10 @@ modules:
         - hugo
         - unityhub
         - dotnet-sdk-6.0
+        - dotnet-sdk-7.0
+        - dotnet-sdk-8.0
     optfix:
-        - unityhub # This is the directory being fixed, not the package name
+        - unityhub 
   - type: fonts
     fonts:
       nerd-fonts:
