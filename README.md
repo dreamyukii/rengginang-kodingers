@@ -19,9 +19,3 @@ GNOME
 rpm-ostree rebase ostree-image-signed:docker://ghcr.io/sekalengrengginang/kodingers-gnome:latest
 ```
 ---
-Labwc
-
-```bash
-rpm-ostree rebase ostree-image-signed:docker://ghcr.io/sekalengrengginang/kodingers-labwc:latest
-```
----

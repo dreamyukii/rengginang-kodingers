@@ -12,6 +12,8 @@ image-version: latest # version
 modules:
     - from-file: remove-package.yml
     - from-file: openrazer.yml
+    - from-file: container.yml
+    - from-file: virtualization.yml
     - from-file: add-package.yml
     - from-file: after-build.yml
 

@@ -11,6 +11,7 @@ image-version: latest # version
 # module configuration
 modules:
     - from-file: remove-package.yml
+    - from-file: container.yml
     - from-file: add-package.yml
     - from-file: after-build.yml
 
