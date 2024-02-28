@@ -14,7 +14,10 @@ modules:
         - gamescope
         - powertop
     optfix:
-        - unityhub 
+        - unityhub
+    remove:
+        - firefox 
+        - firefox-langpacks 
   - type: fonts
     fonts:
       nerd-fonts:

@@ -10,9 +10,8 @@ image-version: latest # version
 
 # module configuration
 modules:
-    - from-file: remove-package.yml
     - from-file: container.yml
-    - from-file: add-package.yml
+    - from-file: package.yml
     - from-file: after-build.yml
 
 -type: signing # this sets up the proper policy & signing files for signed images to work fully

@@ -10,11 +10,9 @@ image-version: 39 # version
 
 # module configuration
 modules:
-    - from-file: remove-package.yml
-    - from-file: openrazer.yml
     - from-file: container.yml
     - from-file: virtualization.yml
-    - from-file: add-package.yml
+    - from-file: package.yml
     - from-file: after-build.yml
 
 -type: signing # this sets up the proper policy & signing files for signed images to work fully
