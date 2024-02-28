@@ -1,8 +1,7 @@
 modules:
-  - type: containerfile   
-    snippets:
-        - COPY --from=ghcr.io/ublue-os/akmods:main-39 /rpms /tmp/akmods-rpms
-        - RUN rpm-ostree install /tmp/akmods-rpms/kmods/*openrazer*.rpm
+  - type: akmods
+    install:
+    - openrazer
   - type: rpm-ostree   
     repos:
           - https://download.opensuse.org/repositories/hardware:/razer/Fedora_39/hardware:razer.repo
