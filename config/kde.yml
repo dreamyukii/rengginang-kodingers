@@ -6,12 +6,13 @@ description: kodingers os with kde.
 
 # base image
 base-image: ghcr.io/ublue-os/kinoite-main
-image-version: 39 # version
+image-version: latest # version
 
 # module configuration
 modules:
     - from-file: container.yml
     - from-file: virtualization.yml
+    - from-file: openrazer.yml
     - from-file: package.yml
     - from-file: after-build.yml
 

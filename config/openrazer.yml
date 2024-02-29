@@ -1,5 +1,6 @@
 modules:
   - type: akmods
+    base: main
     install:
     - openrazer
   - type: rpm-ostree   
