@@ -5,14 +5,10 @@ modules:
         - https://gist.githubusercontent.com/sekalengrengginang/8673e3f71d913c1d384bf8a64af8df1c/raw/cf904a36c5bea766ef5145d9d8605009be419d88/unityhub.repo
     install:
         - code
-        - neofetch
         - zsh
-        - yt-dlp
+        - unityhub
         - jetbrains-mono-fonts-all
         - fira-code-fonts
-        - unityhub
-        - gamescope
-        - powertop
     optfix:
         - unityhub
     remove:
