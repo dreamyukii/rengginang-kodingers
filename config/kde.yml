@@ -12,6 +12,7 @@ image-version: latest # version
 modules:
     - from-file: container.yml
     - from-file: virtualization.yml
+    - from-file: unity.yml
     - from-file: openrazer.yml
     - from-file: package.yml
     - from-file: after-build.yml

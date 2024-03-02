@@ -6,11 +6,8 @@ modules:
     install:
         - code
         - zsh
-        - unityhub
         - jetbrains-mono-fonts-all
         - fira-code-fonts
-    optfix:
-        - unityhub
     remove:
         - firefox 
         - firefox-langpacks 
