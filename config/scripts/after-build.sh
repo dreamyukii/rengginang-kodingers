@@ -9,5 +9,4 @@ ln -sf /usr/bin/ld.bfd /etc/alternatives/ld && ln -sf /etc/alternatives/ld /usr/
 rm -f /etc/yum.repos.d/vscode.repo && \
 rm -f /etc/yum.repos.d/docker-ce.repo && \
 rm -f /etc/yum.repos.d/unityhub.repo && \
-rm -f /etc/yum.repos.d/hardware:razer.repo && \
-rm -rf /tmp/* /var/* 
+rm -f /etc/yum.repos.d/hardware:razer.repo 
