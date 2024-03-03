@@ -6,3 +6,6 @@ modules:
         - unityhub
     optfix:
         - unityhub
+  - type: files
+    files:
+      - usr: /usr
