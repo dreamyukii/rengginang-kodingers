@@ -6,6 +6,3 @@ modules:
         - unityhub
     optfix:
         - unityhub
-  - type: files
-    files:
-      - usr: /usr/share/applications/unityhub.desktop

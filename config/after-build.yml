@@ -4,4 +4,4 @@ modules:
         - after-build.sh
   - type: files
     files:
-      - usr: /usr/share/applications/code.desktop
+      - usr: /usr
