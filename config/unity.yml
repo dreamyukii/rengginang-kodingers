@@ -8,4 +8,4 @@ modules:
         - unityhub
   - type: files
     files:
-      - usr: /usr
+      - usr: /usr/share/applications/unityhub.desktop

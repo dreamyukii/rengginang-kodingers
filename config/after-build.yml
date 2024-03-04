@@ -2,3 +2,6 @@ modules:
   - type: script 
     scripts:
         - after-build.sh
+  - type: files
+    files:
+      - usr: /usr/share/applications/code.desktop
