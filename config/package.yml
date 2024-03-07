@@ -8,6 +8,7 @@ modules:
         - zsh
         - jetbrains-mono-fonts-all
         - fira-code-fonts
+        - langpacks-id
     remove:
         - firefox 
         - firefox-langpacks 
