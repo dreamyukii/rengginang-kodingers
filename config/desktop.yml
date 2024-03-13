@@ -1,16 +1,19 @@
 # image name
-name: kodingers-gnome
+name: kodingers-kde
 
 # image description
-description: kodingers os with gnome.
+description: kodingers os for my desktop.
 
 # base image
-base-image: ghcr.io/ublue-os/silverblue-main
+base-image: ghcr.io/ublue-os/kinoite-main
 image-version: latest # version
 
 # module configuration
 modules:
     - from-file: container.yml
+    - from-file: virtualization.yml
+    - from-file: unity.yml
+    - from-file: openrazer.yml
     - from-file: package.yml
     - from-file: after-build.yml
 

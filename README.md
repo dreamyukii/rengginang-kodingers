@@ -4,18 +4,3 @@
 ## rengginang-kodingers
 
 [![build-kodingers](https://github.com/sekalengrengginang/rengginang-kodingers/actions/workflows/build.yml/badge.svg)](https://github.com/sekalengrengginang/rengginang-kodingers/actions/workflows/build.yml)
-
-### Rebase 
-
-KDE
-
-```bash
-rpm-ostree rebase ostree-image-signed:docker://ghcr.io/sekalengrengginang/kodingers-kde:latest
-```
----
-GNOME
-
-```bash
-rpm-ostree rebase ostree-image-signed:docker://ghcr.io/sekalengrengginang/kodingers-gnome:latest
-```
----
