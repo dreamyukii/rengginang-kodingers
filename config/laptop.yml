@@ -10,7 +10,6 @@ image-version: 40 # version
 
 # module configuration
 modules:
-    - from-file: container.yml
     - from-file: package.yml
     - from-file: after-build.yml
 
