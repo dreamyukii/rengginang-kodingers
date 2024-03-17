@@ -5,8 +5,8 @@ name: kodingers-laptop
 description: kodingers os for my laptop.
 
 # base image
-base-image: quay.io/fedora-ostree-desktops/kinoite:40
-image-version: latest # version
+base-image: quay.io/fedora-ostree-desktops/kinoite
+image-version: 40 # version
 
 # module configuration
 modules:
