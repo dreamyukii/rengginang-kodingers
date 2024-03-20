@@ -8,7 +8,6 @@ modules:
         - docker-buildx-plugin
         - docker-compose-plugin
         - podman-compose
-        - podman-plugins
         - podman-tui
   - type: systemd
     system:
