@@ -8,6 +8,7 @@ modules:
         - jetbrains-mono-fonts-all
         - fira-code-fonts
         - langpacks-id
+        - xwayland-run
     remove:
         - firefox 
         - firefox-langpacks 
