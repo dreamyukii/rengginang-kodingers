@@ -6,7 +6,7 @@ description: kodingers os for my desktop.
 
 # base image
 base-image: ghcr.io/ublue-os/kinoite-main
-image-version: 39 # version
+image-version: 40 # version
 
 # module configuration
 modules:
