@@ -1,7 +1,7 @@
 modules:
   - type: rpm-ostree   
     repos:
-        - https://raw.githubusercontent.com/ublue-os/bluefin/main/dx/etc/yum.repos.d/vscode.repo
+        - https://raw.githubusercontent.com/ublue-os/bluefin/main/system_files/dx/etc/yum.repos.d/vscode.repo
     install:
         - code
         - zsh
