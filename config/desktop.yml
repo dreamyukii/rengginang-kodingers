@@ -12,7 +12,6 @@ image-version: 40 # version
 modules:
     - from-file: openrazer.yml
     - from-file: container.yml
-    - from-file: virtualization.yml
     - from-file: package.yml
     - from-file: after-build.yml
 
