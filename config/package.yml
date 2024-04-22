@@ -9,6 +9,7 @@ modules:
         - fira-code-fonts
         - langpacks-id
         - xwayland-run
+        - papirus-icon-theme 
     remove:
         - firefox 
         - firefox-langpacks 
