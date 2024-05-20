@@ -1,8 +1,7 @@
 name: kodingers-build
 on:
   schedule:
-    - cron: "00 17 * * *" # build at 17:00 UTC every day 
-                          # (20 minutes after last ublue images start building)
+    - cron: "0 23 */2 * *" # every 2 days
   push:
     paths-ignore: # don't rebuild if only documentation has changed
       - "**.md"
