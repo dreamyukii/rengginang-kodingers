@@ -2,6 +2,3 @@ modules:
   - type: script 
     scripts:
         - after-build.sh
-  - type: files
-    files:
-      - usr: /usr
