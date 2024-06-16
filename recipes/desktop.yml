@@ -10,10 +10,10 @@ image-version: 40 # version
 
 # module configuration
 modules:
-    - from-file: openrazer.yml
-    - from-file: container.yml
-    - from-file: package.yml
-    - from-file: after-build.yml
+    - from-file: ./image_configs/openrazer.yml
+    - from-file: ./image_configs/container.yml
+    - from-file: ./image_configs/package.yml
+    - from-file: ./image_configs/after-build.yml
 
 -type: signing # this sets up the proper policy & signing files for signed images to work fully
 
