@@ -1,18 +1,9 @@
 modules:
   - type: rpm-ostree   
-    repos:
-        - https://raw.githubusercontent.com/ublue-os/bluefin/main/system_files/dx/etc/yum.repos.d/vscode.repo
     install:
-        - code
-        - zsh
         - jetbrains-mono-fonts-all
         - fira-code-fonts
         - langpacks-id
-        - xwayland-run
-        - papirus-icon-theme 
-    remove:
-        - firefox 
-        - firefox-langpacks 
   - type: fonts
     fonts:
       nerd-fonts:

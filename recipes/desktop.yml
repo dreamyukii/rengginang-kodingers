@@ -5,13 +5,12 @@ name: kodingers-desktop
 description: kodingers os for my desktop.
 
 # base image
-base-image: ghcr.io/ublue-os/kinoite-main
-image-version: 40 # version
+base-image: ghcr.io/ublue-os/aurora-dx
+image-version: latest # version
 
 # module configuration
 modules:
     - from-file: ./image_configs/openrazer.yml
-    - from-file: ./image_configs/container.yml
     - from-file: ./image_configs/package.yml
 
 -type: signing # this sets up the proper policy & signing files for signed images to work fully
