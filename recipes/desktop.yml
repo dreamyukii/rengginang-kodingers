@@ -6,7 +6,7 @@ description: kodingers os for my desktop.
 
 # base image
 base-image: ghcr.io/ublue-os/aurora-dx
-image-version: latest # version
+image-version: stable # version
 
 # module configuration
 modules:
