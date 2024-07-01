@@ -1,7 +1,7 @@
 name: kodingers-build
 on:
   schedule:
-    - cron: "0 23 */2 * *" # every 2 days
+    - cron: "0 0 * * 0" # every sunday
   push:
     paths-ignore: # don't rebuild if only documentation has changed
       - "**.md"
