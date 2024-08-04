@@ -1,8 +1,0 @@
-modules:
-  - type: rpm-ostree   
-    repos:
-          - https://download.opensuse.org/repositories/hardware:/razer/Fedora_40/hardware:razer.repo
-    install:
-            - openrazer-daemon
-            - polychromatic
-            - python3-openrazer
