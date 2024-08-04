@@ -25,7 +25,7 @@ jobs:
     steps:
        # the build is fully handled by the reusable github action
       - name: build kodingers image
-        uses: blue-build/github-action@v1.6
+        uses: blue-build/github-action@main
         with:
           maximize_build_space: true
           recipe: ${{ matrix.recipe }}
