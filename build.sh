@@ -15,4 +15,4 @@ RELEASE="$(rpm -E %fedora)"
 curl -Lo /etc/yum.repos.d/hardware:razer-"${RELEASE}".repo https://download.opensuse.org/repositories/hardware:/razer/Fedora_"${RELEASE}"/hardware:razer.repo
 
 # this installs a package from fedora repos
-rpm-ostree install openrazer-daemon polychromatic python3-openrazer jetbrains-mono-fonts-all fira-code-fonts langpacks-id breeze-gtk
+rpm-ostree install openrazer-daemon polychromatic mpv gamescope python3-openrazer jetbrains-mono-fonts-all fira-code-fonts langpacks-id breeze-gtk
